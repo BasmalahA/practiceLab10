@@ -12,13 +12,31 @@ import org.junit.Test;
 public class testSelectionSort {
 	@Test
 	public void test() {
+<<<<<<< HEAD
 		testPositive();
 		testNegative();
+=======
+		testMixed();
+		testDuplicates();
+>>>>>>> test2
 	}
 
     public testSelectionSort() {
     }
+<<<<<<< HEAD
+=======
+		public void testMixed(){
 
+			 /** Test data contains with both positive, negative and zeros **/
+		 assertArrayEquals(new int[] {-2,-1,0,1,2},new SelectionSort().basicSelectionSort(new int[] {-1,0,2,-2,1}));
+	 }
+
+	 public void testDuplicates(){
+>>>>>>> test2
+
+			 /** Test data contains duplicates **/
+		 assertArrayEquals(new int[] {-1,-1,0,2,2},new SelectionSort().basicSelectionSort(new int[] {-1,0,2,-1,2}));
+	 }
 
 	    public void testPositive(){
 	        int[] arr = new int[5];
